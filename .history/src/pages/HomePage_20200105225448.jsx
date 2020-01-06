@@ -10,11 +10,20 @@ const HomePage = () => {
     setHouses(resp.data)
   }
   useEffect(() => {
-    getHouses()
+    getStudents()
   }, [])
   return (
     <>
       <header>All Hogwarts Students</header>
+      <ul>
+        {students.map(student => {
+          return (
+            <li>
+              <Link to={`/student/${student.id}`}>{student.fullName}</Link>
+            </li>
+          )
+        })}
+      </ul>
     </>
   )
 }
