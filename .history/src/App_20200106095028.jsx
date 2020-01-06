@@ -5,7 +5,7 @@ import Page2 from './pages/Students'
 import HomePage from './pages/HomePage'
 import NotFound from './pages/NotFound'
 import NewStudent from './pages/NewHouse'
-import HogwartStudents from './pages/Students'
+import HogwartStudent from './pages/Students'
 
 const App = () => {
   return (
@@ -29,7 +29,7 @@ const App = () => {
       <Switch>
         <Route exact path="/" component={HomePage}></Route>
         <Route exact path="/house/new" component={NewHouse}></Route>
-        <Route exact path="/student" component={HogwartStudents}></Route>
+        <Route exact path="/student" component={HogwartStudent}></Route>
         <Route path="*" component={NotFound}></Route>
       </Switch>
     </Router>
