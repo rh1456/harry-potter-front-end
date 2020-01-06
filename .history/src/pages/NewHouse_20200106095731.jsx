@@ -24,7 +24,7 @@ const updateHouseObject = e => {
 const submitHouse = async e => {
   e.preventDefault()
   const isValid = Object.keys(house).reduce((acc, key) => {
-    return acc && house[key] ! == ''
+    return acc && student [key] ! == ''
   }, true)
   if(isValid) {
     const resp = await axios.post('https://localhost:5001/api/House', {
