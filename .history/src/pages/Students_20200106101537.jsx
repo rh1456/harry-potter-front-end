@@ -14,13 +14,6 @@ const sentStudentToApi = async () => {
     name: name, 
     houseId: parseInt(props.match.params.id),
   })
-  console.log(resp.data)
-  setStudents(prev => {
-    return {
-      ...prev,
-      students: [...prev.students.concat(resp.data)], 
-    }
-  })
 }
 
 const Students = () => {
