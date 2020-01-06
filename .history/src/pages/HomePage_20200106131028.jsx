@@ -15,15 +15,6 @@ const HomePage = () => {
   return (
     <>
       <header>All Hogwarts Houses</header>
-      <ul>
-        {houses.map(house => {
-          return (
-            <li>
-              <Link to={`/house/${house.id}`}>{house.houseName}</Link>
-            </li>
-          )
-        })}
-      </ul>
     </>
   )
 }

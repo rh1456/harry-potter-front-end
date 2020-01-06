@@ -7,9 +7,7 @@ const HogwartStudents = props => {
   const [houseId, setHouseId] = useState('')
 
   const getStudent = async () => {
-    const resp = await axios.get(
-      `https://localhost:5001/api/Student/${props.match.params.id}`
-    )
+    const resp = await axios.get(`https://localhost:5001/api/Student`)
     setStudents(resp.data)
   }
 
